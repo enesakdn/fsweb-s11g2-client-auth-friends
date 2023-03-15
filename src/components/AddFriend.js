@@ -38,25 +38,27 @@ const AddFriend = () => {
   return (
     <div className={{ flexDirection: "column" }}>
       <form onSubmit={handleAddSubmit}>
+        NAME:
         <input
           type="text"
           name="name"
           value={newFriend.name}
           onChange={handleOnChange}
         />
+        EMAİL:
         <input
           type="text"
           name="email"
           value={newFriend.email}
           onChange={handleOnChange}
         />
+        AGE:
         <input
           type="number"
           name="age"
           value={newFriend.age}
           onChange={handleOnChange}
         />
-
         <button type="submit">Ekle</button>
       </form>
     </div>
